@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 
 const clienteSchema = new mongoose.Schema({
-    name: {
+    nombre: {
         type:String,
         required: [true, 'name Is Required']
     },

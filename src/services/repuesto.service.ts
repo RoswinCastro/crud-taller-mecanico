@@ -33,9 +33,9 @@ export class RepuestoService{
         }
     }
 
-    async delete(id:string):Promise<RepuestoEntity>{
+    async delete(_id:string):Promise<RepuestoEntity>{
         try {
-            const Repuesto = await RepuestoModel.findByIdAndDelete({_id:id});
+            const Repuesto = await RepuestoModel.findByIdAndDelete({_id});
             if(!Repuesto) throw CustomError.badRequest("Repuesto don't exist")
             return RepuestoMaper.fromEntity(Repuesto);
 
@@ -45,9 +45,9 @@ export class RepuestoService{
         }
     }
 
-    async findOne(id:string):Promise<RepuestoEntity>{
+    async findOne(_id:string):Promise<RepuestoEntity>{
         try {
-            const Repuesto = await RepuestoModel.findById({id});
+            const Repuesto = await RepuestoModel.findById({_id});
             if(!Repuesto) throw CustomError.badRequest("Repuesto don't exist")
             return RepuestoMaper.fromEntity(Repuesto);
       

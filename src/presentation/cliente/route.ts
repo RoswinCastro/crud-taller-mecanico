@@ -9,7 +9,7 @@ export class ClienteRoute{
          const controller = new ClienteController(clienteServices);
          routes.get('/:id', controller.findOne);
          routes.put('/:id', controller.update);
-         routes.delete('/id', controller.delete);
+         routes.delete('/:id', controller.delete);
          routes.post('/', controller.create)
          return routes;
      }

@@ -33,9 +33,9 @@ export class EmpleadoService{
         }
     }
 
-    async delete(id:string):Promise<EmpleadoEntity>{
+    async delete(_id:string):Promise<EmpleadoEntity>{
         try {
-            const Empleado = await EmpleadoModel.findByIdAndDelete({_id:id});
+            const Empleado = await EmpleadoModel.findByIdAndDelete({_id});
             if(!Empleado) throw CustomError.badRequest("Empleado don't exist")
             return EmpleadoMaper.fromEntity(Empleado);
 
@@ -45,9 +45,9 @@ export class EmpleadoService{
         }
     }
 
-    async findOne(id:string):Promise<EmpleadoEntity>{
+    async findOne(_id:string):Promise<EmpleadoEntity>{
         try {
-            const Empleado = await EmpleadoModel.findById({_id:id});
+            const Empleado = await EmpleadoModel.findById({_id});
             if(!Empleado) throw CustomError.badRequest("Empleado don't exist")
             return EmpleadoMaper.fromEntity(Empleado);
       

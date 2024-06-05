@@ -33,9 +33,9 @@ export class ServicioService{
         }
     }
 
-    async delete(id:string):Promise<ServicioEntity>{
+    async delete(_id:string):Promise<ServicioEntity>{
         try {
-            const Servicio = await ServicioModel.findByIdAndDelete({_id:id});
+            const Servicio = await ServicioModel.findByIdAndDelete({_id});
             if(!Servicio) throw CustomError.badRequest("Servicio don't exist")
             return ServicioMaper.fromEntity(Servicio);
 
@@ -45,9 +45,9 @@ export class ServicioService{
         }
     }
 
-    async findOne(id:string):Promise<ServicioEntity>{
+    async findOne(_id:string):Promise<ServicioEntity>{
         try {
-            const Servicio = await ServicioModel.findById({_id:id});
+            const Servicio = await ServicioModel.findById({_id});
             if(!Servicio) throw CustomError.badRequest("Servicio don't exist")
             return ServicioMaper.fromEntity(Servicio);
       

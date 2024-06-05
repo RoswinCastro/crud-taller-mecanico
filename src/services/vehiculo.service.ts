@@ -33,9 +33,9 @@ export class VehiculoService{
         }
     }
 
-    async delete(id:string):Promise<VehiculoEntity>{
+    async delete(_id:string):Promise<VehiculoEntity>{
         try {
-            const Vehiculo = await VehiculoModel.findByIdAndDelete({_id:id});
+            const Vehiculo = await VehiculoModel.findByIdAndDelete({_id});
             if(!Vehiculo) throw CustomError.badRequest("Vehiculo don't exist")
             return VehiculoMaper.fromEntity(Vehiculo);
 
@@ -45,9 +45,9 @@ export class VehiculoService{
         }
     }
 
-    async findOne(id:string):Promise<VehiculoEntity>{
+    async findOne(_id:string):Promise<VehiculoEntity>{
         try {
-            const Vehiculo = await VehiculoModel.findById({_id:id});
+            const Vehiculo = await VehiculoModel.findById({_id});
             if(!Vehiculo) throw CustomError.badRequest("Vehiculo don't exist")
             return VehiculoMaper.fromEntity(Vehiculo);
       
