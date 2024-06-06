@@ -47,7 +47,7 @@ npm install -g typescript
 Dentro del directorio del proyecto, instala las dependencias necesarias ejecutando:
 
 ```sh
-npm instal o npm i
+npm install o npm i
 ```
 ## Configuración y Ejecución de Docker
 Inicia Docker en tu sistema.
