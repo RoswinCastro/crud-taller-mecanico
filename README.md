@@ -2,7 +2,7 @@
 
 Este proyecto es una aplicación para gestionar un taller mecánico, utilizando una base de datos no relacional. A continuación, se detallan los pasos necesarios para configurar y ejecutar el proyecto en tu entorno local.
 
-## Prerrequisitos
+## Requisitos
 
 Antes de comenzar, asegúrate de tener instalados los siguientes programas en tu sistema:
 
