@@ -1,0 +1,29 @@
+cliente
+- nombre
+- apellido
+- direccion
+- telefono
+- correo
+
+empleado
+- nombre
+- apellido
+- cargo
+- especialidad
+
+repuesto
+- codigo
+- descripcion
+- precio
+
+servicio
+- descripcion
+- precio
+- duracion
+
+vehiculo
+- matricula
+- marca
+- modelo
+- año
+- kilometraje
