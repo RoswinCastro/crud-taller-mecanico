@@ -29,7 +29,7 @@ Antes de comenzar, asegúrate de tener instalados los siguientes programas en tu
     ```
     
 NOTA:
-- DEBES CREAR UN .env dentro del repositorio con lo siguiente:
+- debes crear un .env dentro del repositorio con lo siguiente:
 ```sh
 MONGO_USER=cavitari2612
 MONGO_PASSWORD=zoSc7JpCjElWEIy2
