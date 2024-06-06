@@ -40,9 +40,9 @@ PORT=3000
 ## Configuración de TypeScript
 
 Asegúrate de tener TypeScript configurado en tu entorno. Si no lo tienes, puedes instalarlo globalmente usando npm:
-
+```sh
 npm install -g typescript
-
+```
 ## Instalación de Dependencias
 Dentro del directorio del proyecto, instala las dependencias necesarias ejecutando:
 
