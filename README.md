@@ -55,7 +55,7 @@ Inicia Docker en tu sistema.
 En la terminal de Visual Studio Code, ejecuta el siguiente comando para iniciar los contenedores:
 
 ```sh
-docker-compose up -d
+docker compose up -d
 ```
 Ejecución del Proyecto
 En la terminal de Visual Studio Code, ejecuta el siguiente comando para iniciar la aplicación:
