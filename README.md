@@ -32,8 +32,8 @@ Antes de comenzar, asegúrate de tener instalados los siguientes programas en tu
 
 Asegúrate de tener TypeScript configurado en tu entorno. Si no lo tienes, puedes instalarlo globalmente usando npm:
 
-```sh
 npm install -g typescript
+
 ## Instalación de Dependencias
 Dentro del directorio del proyecto, instala las dependencias necesarias ejecutando:
 
